@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63494306211",
+    "project_id": "hackatonprojectfoodapp",
+    "storage_bucket": "hackatonprojectfoodapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63494306211:android:b03ecf9801a4492b50c216",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDlQKffTpxDNbLjGwvC5cO95lCoVFkpr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
