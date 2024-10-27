@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-                SizedBox(width: 200),
+                const SizedBox(width: 200),
                 IconButton(
                     onPressed: () {},
                     icon: Icon(
@@ -68,9 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     )),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
-              padding: EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: 20),
               child: TextFormField(
                 controller: searchController,
                 decoration: InputDecoration(
@@ -97,9 +97,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         ))),
               ),
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             Padding(
-              padding: EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 20),
               child: Row(
@@ -204,7 +204,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Padding(
@@ -222,6 +222,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           Positioned(
+                            left: 20,
+                            top: 20,
                             child: Text(
                               "30% OFF",
                               style: TextStyle(
@@ -229,16 +231,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold),
                             ),
-                            left: 20,
-                            top: 20,
                           ),
                           Positioned(
+                            left: 20,
+                            top: 60,
                             child: Text(
                               "Discover discounts in your\nfavourite local restaurants",
                               style: TextStyle(color: Grey, fontSize: 14),
                             ),
-                            left: 20,
-                            top: 60,
                           ),
                           Positioned(
                             //left: 0,
@@ -274,7 +274,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Container(
                       height: 180,
                       width: 320,
@@ -285,6 +285,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           Positioned(
+                            left: 20,
+                            top: 20,
                             child: Text(
                               "30% OFF",
                               style: TextStyle(
@@ -292,16 +294,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold),
                             ),
-                            left: 20,
-                            top: 20,
                           ),
                           Positioned(
+                            left: 20,
+                            top: 60,
                             child: Text(
                               "Discover discounts in your\nfavourite local restaurants",
                               style: TextStyle(color: Grey, fontSize: 14),
                             ),
-                            left: 20,
-                            top: 60,
                           ),
                           Positioned(
                             //left: 0,
@@ -337,7 +337,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Container(
                       height: 180,
                       width: 320,
@@ -348,6 +348,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           Positioned(
+                            left: 20,
+                            top: 20,
                             child: Text(
                               "30% OFF",
                               style: TextStyle(
@@ -355,16 +357,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold),
                             ),
-                            left: 20,
-                            top: 20,
                           ),
                           Positioned(
+                            left: 20,
+                            top: 60,
                             child: Text(
                               "Discover discounts in your\nfavourite local restaurants",
                               style: TextStyle(color: Grey, fontSize: 14),
                             ),
-                            left: 20,
-                            top: 60,
                           ),
                           Positioned(
                             //left: 0,
@@ -400,7 +400,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Container(
                       height: 180,
                       width: 320,
@@ -411,6 +411,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Stack(
                         children: [
                           Positioned(
+                            left: 20,
+                            top: 20,
                             child: Text(
                               "30% OFF",
                               style: TextStyle(
@@ -418,16 +420,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold),
                             ),
-                            left: 20,
-                            top: 20,
                           ),
                           Positioned(
+                            left: 20,
+                            top: 60,
                             child: Text(
                               "Discover discounts in your\nfavourite local restaurants",
                               style: TextStyle(color: Grey, fontSize: 14),
                             ),
-                            left: 20,
-                            top: 60,
                           ),
                           Positioned(
                             //left: 0,
@@ -478,7 +478,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             InkWell(
               onTap: () {
-                Get.to(RestaurantScreen());
+                Get.to(const RestaurantScreen());
               },
               child: Container(
                 height: 180,

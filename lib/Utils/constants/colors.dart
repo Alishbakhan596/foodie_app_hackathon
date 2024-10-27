@@ -5,7 +5,7 @@ Color Blue = Colors.blue;
 Color Grey = Colors.grey;
 Color Green = Colors.green;
 Color litepurple = const Color(0xFF6562FB);
-Color Purple = Color(0xFF800080);
+Color Purple = const Color(0xFF800080);
 
 class GrdColor {
   static LinearGradient colorsScaffold = const LinearGradient(

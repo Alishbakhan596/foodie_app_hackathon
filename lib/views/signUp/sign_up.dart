@@ -24,11 +24,11 @@ class _SignUpState extends State<SignUp> {
             child: Column(
               children: [
                 Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Center(child: Image.asset("assets/images/logo.png")),
                 ),
                 Container(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   child: Text(
                     "Deliver Favourite Food",
                     style: TextStyle(color: White, fontSize: 25),
@@ -42,7 +42,7 @@ class _SignUpState extends State<SignUp> {
                       decoration: BoxDecoration(
                           gradient: containerGrd.gradientColor,
                           borderRadius: BorderRadius.circular(16),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 color: Colors.black12,
                                 blurRadius: 10.0,
@@ -59,20 +59,20 @@ class _SignUpState extends State<SignUp> {
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
-                          CreateAccount()
+                          const CreateAccount()
                         ],
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   child: Text(
                     "Don't have an account",
                     style: TextStyle(fontSize: 20, color: White),
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Container(
                     child: TextButton(
                   onPressed: () {},

@@ -20,10 +20,10 @@ class Button extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Color(0xff0F55E8).withOpacity(0.2),
+              color: const Color(0xff0F55E8).withOpacity(0.2),
               spreadRadius: 3,
               blurRadius: 10,
-              offset: Offset(1, 1),
+              offset: const Offset(1, 1),
             ),
           ],
         ),
@@ -34,12 +34,12 @@ class Button extends StatelessWidget {
             shadowColor: Colors.transparent,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
-              side: BorderSide(color: Color(0xff0F55E8), width: 2),
+              side: const BorderSide(color: Color(0xff0F55E8), width: 2),
             ),
           ),
           child: Text(
             insideText,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),

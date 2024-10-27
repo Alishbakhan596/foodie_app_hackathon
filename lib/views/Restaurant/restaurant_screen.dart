@@ -29,15 +29,15 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
           forceMaterialTransparency: true,
           leading: IconButton(
             onPressed: () {
-              Get.to(BottomNavigationMenu());
+              Get.to(const BottomNavigationMenu());
             },
-            icon: Icon(Icons.arrow_back_ios),
+            icon: const Icon(Icons.arrow_back_ios),
             color: White,
           ),
           actions: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.favorite),
+              icon: const Icon(Icons.favorite),
               color: White,
             )
           ],
@@ -49,7 +49,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                 height: 360,
                 width: 500,
                 alignment: Alignment.topCenter,
-                padding: EdgeInsets.all(23),
+                padding: const EdgeInsets.all(23),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("assets/images/image 18.png"),
@@ -75,7 +75,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                               Row(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                         horizontal: 15, vertical: 10),
                                     child: Icon(
                                       Icons.assistant_navigation,
@@ -96,7 +96,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                                         style: TextStyle(
                                             fontSize: 13, color: Grey),
                                       ),
-                                      SizedBox(height: 10)
+                                      const SizedBox(height: 10)
                                     ],
                                   )
                                 ],
@@ -161,7 +161,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 10),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Container(
@@ -174,7 +175,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                         child: Row(
                           children: [
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8),
                               child: Container(
                                 height: 35,
                                 width: 90,
@@ -191,7 +193,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8),
                               child: Container(
                                 child: Center(
                                   child: Text("Take Out",
@@ -206,7 +209,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(),
+                    padding: const EdgeInsets.symmetric(),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Container(
@@ -218,11 +221,12 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                         child: Row(
                           children: [
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8),
                               child: Row(
                                 children: [
                                   Icon(Icons.person_add_alt, color: White),
-                                  SizedBox(width: 5),
+                                  const SizedBox(width: 5),
                                   Center(
                                     child: Text("Group Order",
                                         style: TextStyle(
@@ -239,7 +243,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 15),
+                padding: const EdgeInsets.symmetric(vertical: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -248,12 +252,12 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                       "Featured Items",
                       style: TextStyle(fontSize: 20, color: White),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Text(
                       "Apptizers",
                       style: TextStyle(fontSize: 20, color: White),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Text(
                       "Sushi",
                       style: TextStyle(fontSize: 20, color: White),
@@ -262,7 +266,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Divider(
                   color: White,
                 ),
@@ -285,6 +289,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                                   Border.all(color: White.withOpacity(0.3))),
                           child: Stack(children: [
                             Positioned(
+                              left: 20,
+                              top: 20,
                               child: Text(
                                 "Udon Miso",
                                 style: TextStyle(
@@ -292,24 +298,22 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold),
                               ),
-                              left: 20,
-                              top: 20,
                             ),
                             Positioned(
+                              left: 20,
+                              top: 60,
                               child: Text(
                                 "Thick handmade udon\nnoodles in a rich miso brot...",
                                 style: TextStyle(color: Grey, fontSize: 14),
                               ),
-                              left: 20,
-                              top: 60,
                             ),
                             Positioned(
+                              left: 20,
+                              top: 130,
                               child: Text(
                                 "\$16.00",
                                 style: TextStyle(color: White, fontSize: 20),
                               ),
-                              left: 20,
-                              top: 130,
                             ),
                             Positioned(
                               //left: 0,
@@ -324,10 +328,10 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                             ),
                           ])),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     GestureDetector(
                       onTap: () {
-                        Get.to(Menu2Screen());
+                        Get.to(const Menu2Screen());
                       },
                       child: Container(
                           height: 180,
@@ -339,6 +343,8 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                                   Border.all(color: White.withOpacity(0.3))),
                           child: Stack(children: [
                             Positioned(
+                              left: 20,
+                              top: 20,
                               child: Text(
                                 "Udon Miso",
                                 style: TextStyle(
@@ -346,24 +352,22 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold),
                               ),
-                              left: 20,
-                              top: 20,
                             ),
                             Positioned(
+                              left: 20,
+                              top: 60,
                               child: Text(
                                 "Thick handmade udon\nnoodles in a rich miso brot...",
                                 style: TextStyle(color: Grey, fontSize: 14),
                               ),
-                              left: 20,
-                              top: 60,
                             ),
                             Positioned(
+                              left: 20,
+                              top: 130,
                               child: Text(
                                 "\$16.00",
                                 style: TextStyle(color: White, fontSize: 20),
                               ),
-                              left: 20,
-                              top: 130,
                             ),
                             Positioned(
                               //left: 0,

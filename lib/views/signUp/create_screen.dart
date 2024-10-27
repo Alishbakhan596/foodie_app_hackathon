@@ -36,7 +36,7 @@ class _CreateAccountState extends State<CreateAccount> {
       setState(() {
         isLoading = true;
       });
-      Get.offAll(() => HomeScreen());
+      Get.offAll(() => const HomeScreen());
     } else {
       setState(() {
         isLoading = false;
@@ -52,7 +52,7 @@ class _CreateAccountState extends State<CreateAccount> {
 
   Widget _page() {
     return Padding(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -162,13 +162,13 @@ class _CreateAccountState extends State<CreateAccount> {
       child: ElevatedButton(
           onPressed: () {
             signUpUser();
-            Get.offAll(() => HomeScreen());
+            Get.offAll(() => const HomeScreen());
           },
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10))),
-          child: Center(
+          child: const Center(
             child: Text(
               "Create Account",
               style: TextStyle(color: Colors.white, fontSize: 20),

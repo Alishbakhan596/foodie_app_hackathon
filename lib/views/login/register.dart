@@ -34,7 +34,7 @@ class _RegisterState extends State<Register> {
       setState(() {
         isLoading = true;
       });
-      Get.offAll(() => SignUp());
+      Get.offAll(() => const SignUp());
     } else {
       setState(() {
         isLoading = false;
@@ -50,7 +50,7 @@ class _RegisterState extends State<Register> {
 
   Widget _page() {
     return Padding(
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -149,7 +149,7 @@ class _RegisterState extends State<Register> {
       child: ElevatedButton(
         onPressed: () {
           LoginUsers();
-          Get.to(HomeScreen());
+          Get.to(const HomeScreen());
         },
         style: ElevatedButton.styleFrom(
             backgroundColor: Colors.transparent,
@@ -181,7 +181,7 @@ class _RegisterState extends State<Register> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset("assets/images/icon.png"),
-                    SizedBox(width: 8),
+                    const SizedBox(width: 8),
                     Icon(
                       Icons.facebook,
                       color: Blue,

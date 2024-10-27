@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hackaton_foodapp/Models/model.dart';
 import 'package:hackaton_foodapp/views/Restaurant/restaurant_screen.dart';
+import 'package:hackaton_foodapp/views/menu/CheckBox.dart';
 import 'package:hackaton_foodapp/widgets/Button/buttons.dart';
 import 'package:hackaton_foodapp/widgets/bottomNavigationMeu/bottom_navigation.dart';
 
@@ -37,7 +38,7 @@ class _Menu2ScreenState extends State<Menu2Screen> {
           forceMaterialTransparency: true,
           leading: IconButton(
               onPressed: () {
-                Get.to(RestaurantScreen());
+                Get.to(const RestaurantScreen());
               },
               icon: Icon(
                 Icons.arrow_back_ios,
@@ -47,7 +48,7 @@ class _Menu2ScreenState extends State<Menu2Screen> {
             Row(
               children: [
                 Icon(Icons.favorite, color: White),
-                SizedBox(width: 5),
+                const SizedBox(width: 5),
                 Icon(
                   Icons.more_horiz,
                   color: White,
@@ -70,7 +71,7 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Text("")),
+                  child: const Text("")),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -86,8 +87,8 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(26),
                             color: litepurple.withOpacity(0.2),
-                            boxShadow: [
-                              const BoxShadow(
+                            boxShadow: const [
+                              BoxShadow(
                                   color: Colors.black,
                                   blurRadius: 40,
                                   offset: Offset(0, 5))
@@ -111,7 +112,7 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                                     style:
                                         TextStyle(fontSize: 20, color: White),
                                   ),
-                                  SizedBox(height: 10),
+                                  const SizedBox(height: 10),
                                   Text(
                                     "Our Udon Miso is a comforting bowl of thick, handmade udon noodles in a rich miso broth, garnished with tofu, spring onions, and vegetables.",
                                     style: TextStyle(
@@ -119,14 +120,14 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                                         color: Grey,
                                         fontWeight: FontWeight.w100),
                                   ),
-                                  SizedBox(height: 10),
+                                  const SizedBox(height: 10),
                                   Container(
                                     width: 120,
                                     height: 38,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10),
                                         border: Border.all(
-                                            color: Color(0xff6562FBC4))),
+                                            color: const Color(0xff6562fbc4))),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceAround,
@@ -140,7 +141,8 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                                             });
                                           },
                                           child: Container(
-                                            margin: EdgeInsets.only(bottom: 15),
+                                            margin: const EdgeInsets.only(
+                                                bottom: 15),
                                             child: Icon(Icons.minimize,
                                                 color: White),
                                           ),
@@ -188,7 +190,7 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                   decoration: BoxDecoration(
                       gradient: containerGrd.gradientColor,
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xff6562FBC4))),
+                      border: Border.all(color: const Color(0xff6562fbc4))),
                   child: Center(
                     child: Text(
                       "Required",
@@ -200,59 +202,29 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                   ),
                 ),
               ]),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text(
                   "Thin",
                   style: TextStyle(fontSize: 18, color: Grey),
                 ),
-                Container(
-                  height: 40,
-                  width: 40,
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xff6562FBC4))),
-                  child: Text(
-                    "",
-                  ),
-                ),
+                CheckBox()
               ]),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text(
                   "Thick",
                   style: TextStyle(fontSize: 18, color: Grey),
                 ),
-                Container(
-                  height: 40,
-                  width: 40,
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xff6562FBC4))),
-                  child: Text(
-                    "",
-                  ),
-                ),
+                CheckBox()
               ]),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Text(
                   "Udon",
                   style: TextStyle(fontSize: 18, color: Grey),
                 ),
-                Container(
-                  height: 40,
-                  width: 40,
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xff6562FBC4))),
-                  child: Text(
-                    "",
-                  ),
-                ),
+                CheckBox()
               ]),
               Button(
                 insideText: "Add To Basket",
@@ -268,7 +240,7 @@ class _Menu2ScreenState extends State<Menu2Screen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => BottomNavigationMenu(
+                          builder: (context) => const BottomNavigationMenu(
                                 initialIndex: 2,
                               )));
                 },

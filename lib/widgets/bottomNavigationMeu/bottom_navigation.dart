@@ -8,8 +8,7 @@ import '../../views/home/home_screen.dart';
 
 class BottomNavigationMenu extends StatefulWidget {
   final int initialIndex;
-  const BottomNavigationMenu({Key? key, this.initialIndex = 0})
-      : super(key: key);
+  const BottomNavigationMenu({super.key, this.initialIndex = 0});
 
   @override
   State<BottomNavigationMenu> createState() => _BottomNavigationMenuState();
@@ -39,8 +38,8 @@ class _BottomNavigationMenuState extends State<BottomNavigationMenu> {
       body: Stack(
         children: [
           IndexedStack(
-            children: ListChildrens,
             index: currentindex,
+            children: ListChildrens,
           ),
           Positioned(
             bottom: 10,
@@ -62,7 +61,7 @@ class _BottomNavigationMenuState extends State<BottomNavigationMenu> {
                         BoxShadow(
                           color: Colors.blue.withOpacity(0.1),
                           blurRadius: 40,
-                          offset: Offset(0, 5),
+                          offset: const Offset(0, 5),
                         ),
                       ],
                     ),

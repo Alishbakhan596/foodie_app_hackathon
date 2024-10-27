@@ -26,11 +26,11 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               children: [
                 Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Center(child: Image.asset("assets/images/logo.png")),
                 ),
                 Container(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   child: Text(
                     "Deliver Favourite Food",
                     style: TextStyle(color: White, fontSize: 25),
@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       decoration: BoxDecoration(
                           gradient: containerGrd.gradientColor,
                           borderRadius: BorderRadius.circular(16),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                                 color: Colors.black12,
                                 blurRadius: 10.0,
@@ -61,24 +61,24 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Register(),
+                          const Register(),
                         ],
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   child: Text(
                     "Don't have an account",
                     style: TextStyle(fontSize: 20, color: White),
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Container(
                     child: TextButton(
                   onPressed: () {
-                    Get.to(SignUp());
+                    Get.to(const SignUp());
                   },
                   child: Text(
                     "REGISTER",
