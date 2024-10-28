@@ -62,142 +62,15 @@ class _TrackOrderState extends State<TrackOrder> {
                 ),
               ),
               const SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.only(left: 60),
-                child: Column(
-                  children: [
-                    Text("04:30 pm",
-                        style: TextStyle(
-                          fontSize: 17,
-                          color: White.withOpacity(0.7),
-                        )),
-                    SizedBox(height: 50),
-                    Text("04:36 pm",
-                        style: TextStyle(
-                          fontSize: 17,
-                          color: White.withOpacity(0.7),
-                        )),
-                    SizedBox(height: 50),
-                    Text("04:42 pm",
-                        style: TextStyle(
-                          fontSize: 17,
-                          color: White.withOpacity(0.7),
-                        )),
-                    SizedBox(height: 50),
-                    Text("04:46 pm",
-                        style: TextStyle(
-                          fontSize: 17,
-                          color: White.withOpacity(0.7),
-                        )),
-                    SizedBox(width: 30),
-                    AnotherStepper(
-                      stepperList: stepperData,
-                      barThickness: 1.9,
-                      verticalGap: 35,
-                      activeBarColor: White,
-                      inActiveBarColor: White,
-                      stepperDirection: Axis.vertical,
-                      iconHeight: 30,
-                      iconWidth: 30,
-                    ),
-                    // SizedBox(height: 50),
-                    // Row(
-                    //   children: [
-                    //     Text("04:38 pm",
-                    //         style: TextStyle(
-                    //           fontSize: 17,
-                    //           color: White.withOpacity(0.7),
-                    //         )),
-                    //     SizedBox(width: 90),
-                    //     // Container(
-                    //     //   child: CircleAvatar(
-                    //     //     backgroundColor: White,
-                    //     //   ),
-                    //     // ),
-                    //     AnotherStepper(
-                    //       stepperList: stepperData,
-                    //       barThickness: 1.9,
-                    //       verticalGap: 25,
-                    //       activeBarColor: Green,
-                    //       inActiveBarColor: Green,
-                    //       stepperDirection: Axis.vertical,
-                    //       iconHeight: 33,
-                    //       iconWidth: 33,
-                    //     ),
-                    //     SizedBox(width: 90),
-                    //     Text("Processing",
-                    //         style: TextStyle(
-                    //           fontSize: 19,
-                    //           color: White,
-                    //         )),
-                    //   ],
-                    // ),
-                    // SizedBox(height: 50),
-                    // Row(
-                    //   children: [
-                    //     Text("04:42 pm",
-                    //         style: TextStyle(
-                    //           fontSize: 17,
-                    //           color: White.withOpacity(0.7),
-                    //         )),
-                    //     SizedBox(width: 90),
-                    //     AnotherStepper(
-                    //       stepperList: stepperData,
-                    //       barThickness: 1.9,
-                    //       verticalGap: 25,
-                    //       activeBarColor: Green,
-                    //       inActiveBarColor: Green,
-                    //       stepperDirection: Axis.vertical,
-                    //       iconHeight: 33,
-                    //       iconWidth: 33,
-                    //     ),
-                    //     // Container(
-                    //     //   child: CircleAvatar(
-                    //     //     backgroundColor: White,
-                    //     //   ),
-                    //     // ),
-                    //     SizedBox(width: 90),
-                    //     Text("On the Way",
-                    //         style: TextStyle(
-                    //           fontSize: 19,
-                    //           color: White,
-                    //         )),
-                    //   ],
-                    // ),
-                    // SizedBox(height: 50),
-                    // Row(
-                    //   children: [
-                    //     Text("04:46 pm",
-                    //         style: TextStyle(
-                    //           fontSize: 17,
-                    //           color: White.withOpacity(0.7),
-                    //         )),
-                    //     SizedBox(width: 90),
-                    //     AnotherStepper(
-                    //       stepperList: stepperData,
-                    //       barThickness: 1.9,
-                    //       verticalGap: 25,
-                    //       activeBarColor: White,
-                    //       inActiveBarColor: White,
-                    //       stepperDirection: Axis.vertical,
-                    //       iconHeight: 33,
-                    //       iconWidth: 33,
-                    //     ),
-                    //     // Container(
-                    //     //   child: CircleAvatar(
-                    //     //     backgroundColor: White,
-                    //     //   ),
-                    //     // ),
-                    //     SizedBox(width: 90),
-                    //     Text("Confirmed",
-                    //         style: TextStyle(
-                    //           fontSize: 19,
-                    //           color: White,
-                    //         )),
-                    //   ],
-                    // ),
-                  ],
-                ),
+              AnotherStepper(
+                stepperList: stepperData,
+                barThickness: 1.9,
+                verticalGap: 35,
+                activeBarColor: White,
+                inActiveBarColor: White,
+                stepperDirection: Axis.vertical,
+                iconHeight: 30,
+                iconWidth: 30,
               ),
               const SizedBox(height: 20),
               Align(

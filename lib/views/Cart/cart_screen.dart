@@ -76,26 +76,26 @@ class _CartScreenState extends State<CartScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/images/image2.png"),
+                        Image.asset("assets/images/burger(1).jpeg"),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "\$52.00",
+                              "450",
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,
                                   fontWeight: FontWeight.w500),
                             ),
                             Text(
-                              "Chicken Veggi Salad",
+                              "Beef Burger",
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,
                                   fontWeight: FontWeight.w500),
                             ),
                             Text(
-                              "With cheese sauce",
+                              "With Fries",
                               style: TextStyle(
                                   fontSize: 18,
                                   color: Colors.grey.shade500,
@@ -185,19 +185,19 @@ class _CartScreenState extends State<CartScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/images/image.png"),
+                        Image.asset("assets/images/image 17.png"),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "\$23.00",
+                              "\$16.00",
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,
                                   fontWeight: FontWeight.w500),
                             ),
                             Text(
-                              "Mutton curry",
+                              "Udon Miso",
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,
@@ -262,7 +262,7 @@ class _CartScreenState extends State<CartScreen> {
                                   ),
                                 ),
                                 const SizedBox(
-                                  width: 180,
+                                  width: 160,
                                 ),
                               ],
                             ),
@@ -294,7 +294,7 @@ class _CartScreenState extends State<CartScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/images/image1.png"),
+                        Image.asset("assets/images/pasta.jpg"),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -306,7 +306,7 @@ class _CartScreenState extends State<CartScreen> {
                                   fontWeight: FontWeight.w500),
                             ),
                             Text(
-                              "French Fry",
+                              "Pasta",
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,

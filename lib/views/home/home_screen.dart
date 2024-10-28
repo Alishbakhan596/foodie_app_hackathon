@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hackaton_foodapp/Utils/constants/colors.dart';
+import 'package:hackaton_foodapp/views/home/home_view.dart';
 
 import '../Restaurant/restaurant_screen.dart';
 
@@ -141,9 +142,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: const Image(
                             image: AssetImage("assets/images/burger.png")),
                       ),
-                      Text(
-                        "Burgers",
-                        style: TextStyle(color: White),
+                      TextButton(
+                        onPressed: () {
+                          Get.off(HomeView());
+                        },
+                        child: Text(
+                          "Burgers",
+                          style: TextStyle(color: White),
+                        ),
                       )
                     ],
                   ),

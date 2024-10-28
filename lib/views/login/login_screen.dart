@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: 20),
                 Container(
                   child: Text(
-                    "Don't have an account",
+                    "Don't have an account?",
                     style: TextStyle(fontSize: 20, color: White),
                   ),
                 ),

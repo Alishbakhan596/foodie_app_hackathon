@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hackaton_foodapp/Utils/constants/colors.dart';
+import 'package:hackaton_foodapp/views/login/login_screen.dart';
 import 'package:hackaton_foodapp/views/signUp/create_screen.dart';
 
 class SignUp extends StatefulWidget {
@@ -68,16 +70,18 @@ class _SignUpState extends State<SignUp> {
                 const SizedBox(height: 20),
                 Container(
                   child: Text(
-                    "Don't have an account",
+                    "Don't have an account?",
                     style: TextStyle(fontSize: 20, color: White),
                   ),
                 ),
                 const SizedBox(height: 5),
                 Container(
                     child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(LoginScreen());
+                  },
                   child: Text(
-                    "SIGNUP",
+                    "SIGNIN",
                     style: TextStyle(fontSize: 17, color: White),
                   ),
                 )),
