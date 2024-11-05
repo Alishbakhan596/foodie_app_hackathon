@@ -32,6 +32,9 @@ class _CartScreenState extends State<CartScreen> {
   int count = 1;
   @override
   Widget build(BuildContext context) {
+    double pricePerUnit = 4.99; // Price per unit
+    double totalPrice = pricePerUnit * count; // Calculate total price
+
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -81,7 +84,7 @@ class _CartScreenState extends State<CartScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "450",
+                              '\$${totalPrice.toStringAsFixed(2)}',
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,
@@ -190,7 +193,7 @@ class _CartScreenState extends State<CartScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "\$16.00",
+                              '\$${totalPrice.toStringAsFixed(2)}',
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,
@@ -299,7 +302,7 @@ class _CartScreenState extends State<CartScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "\$21.00",
+                              '\$${totalPrice.toStringAsFixed(2)}',
                               style: TextStyle(
                                   fontSize: 18,
                                   color: White,

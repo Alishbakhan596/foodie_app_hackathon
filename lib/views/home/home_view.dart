@@ -25,6 +25,9 @@ class _HomeViewState extends State<HomeView> {
   int count = 1;
   @override
   Widget build(BuildContext context) {
+    double pricePerUnit = 4.99; // Price per unit
+    double totalPrice = pricePerUnit * count; // Calculate total price
+
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Container(
@@ -106,7 +109,7 @@ class _HomeViewState extends State<HomeView> {
                                     ),
                                     const SizedBox(height: 5),
                                     Text(
-                                      "450",
+                                      '\$${totalPrice.toStringAsFixed(2)}',
                                       style:
                                           TextStyle(fontSize: 20, color: White),
                                     ),
